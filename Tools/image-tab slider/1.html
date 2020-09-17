@@ -1,0 +1,310 @@
+<html>
+
+<head>
+	<title>eBay</title>
+</head>
+
+<body marginwidth="0" marginheight="0">
+<table align="center" style="border-spacing: 0px; width: 100%;">
+	<tbody>
+	<tr>
+		<td>
+			<div id="ds_div">
+				<font rwr="1" size="4" style="font-family:Arial">
+
+					<meta charset="utf-8">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+					<meta name="description" content="eBay Store Design, Mobile Responsive">
+					<meta name="keywords" content="eBay Store Design, Mobile Responsive, Mobile Optimized, Custom Listing Template, Mobile Responsive Listing, Auction Listing Template, 2019 Approved, Active Content Compliant">
+					<title>Tani-Logics Uk eBay Listing Template</title>
+					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+					<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+					<link href="style.css" rel="stylesheet">
+
+					<style>
+
+						:root {
+							--Primary: #0084c9;
+							--secondary: #fff;
+							--footer: #211D1E;
+							--dark: #333;
+							--ash: #f5f5f5;
+						}
+
+						.content {
+							margin-top: 0
+						}
+
+						.content {
+							border-color: var(--Primary);!important;
+							border-radius: 0;
+							margin-top: 1em
+						}
+
+						.content .panel-default {
+							border-color: #e2e2e2!important;
+							border-radius: 0;
+							font-family: 'Open Sans', sans-serif
+						}
+
+						.right-content {
+							padding: 0
+						}
+
+						.image-gallery {
+							position: relative;
+							width: 95%;
+							margin: 2em auto auto
+						}
+
+						.image-gallery img {
+							margin: 0 auto
+						}
+
+						.slider {
+							width: 100%;
+							display: inline-block;
+							padding-top: 480px;
+							text-align: center;
+						}
+
+						.slider .img-details {
+							width: 100%;
+							position: absolute;
+							left: 0;
+							top: 0;
+							transition: all .5s;
+							text-align: center;
+							max-height: 570px;
+							transition: all .5s;
+							z-index: 22;
+							height: 445px;
+							background: #fff
+						}
+
+						.slider .img-details img {
+							max-width: 100%;
+							max-height: 443px;
+						}
+
+						.slider input[name='slide_switch'] {
+							display: none
+						}
+
+						.slider label {
+							margin-right: 11px;
+							display: inline-block;
+							cursor: pointer;
+							transition: all .5s;
+							opacity: 1;
+							margin-bottom: 1em
+						}
+
+						.slider span {
+							display: table-cell;
+							width: 90px;
+							height: 90px;
+							text-align: center;
+							border: 1px solid #cdcdce;
+							vertical-align: middle;
+						}
+
+						.slider span:has(img[src*="Liquid"]) {
+							display: none
+						}
+
+						.slider label img {
+							max-width: 100%;
+							width: auto;
+							padding: 1px;
+							max-height: 88px
+						}
+
+						.slider img[src*="Liquid"] {
+							display: none
+						}
+
+						.slider input[name='slide_switch']:checked+label {
+							opacity: 1
+						}
+
+						.slider input~.img-details {
+							margin-bottom: 0
+						}
+
+						.slider input[name='slide_switch']~.img-details {
+							opacity: 0;
+							display: none
+						}
+
+						.slider input[name='slide_switch']:checked+label+.img-details {
+							opacity: 1;
+							display: block;
+							transform: scale(1)
+						}
+
+						.slider #id1+label+.img-details {
+							opacity: 1;
+							display: block;
+							transform: scale(1)
+						}
+
+						@media (max-width: 1210px) and (min-width: 1140px) {
+							.slider {
+								padding-top: 495px
+							}
+							.slider .img-details,
+							.slider .img-details img {
+								max-height: 443px
+							}
+						}
+
+						@media (min-width:769px) and (max-width:992px) {
+							#LeftPanel {
+								width: 210px
+							}
+						}
+
+						@media(min-width:992px) and (max-width:1140px) {
+							.slider #id1+label+.img-details:hover,
+							.slider input[name='slide_switch']:checked+label+.img-details:hover {
+								transform: scale(1.1);
+								border: 1px solid var(--Primary);
+							}
+						}
+
+						@media (max-width: 992px) {
+							.slider {
+								padding-top: 495px
+							}
+							.slider .img-details,
+							.slider .img-details img {
+								max-height: 443px
+							}
+						}
+
+
+						@media (max-width: 939px) {
+							.slider {
+								padding-top: 475px
+							}
+							.slider .img-details,
+							.slider .img-details img {
+								max-height: 443px
+							}
+						}
+
+						@media(width: 768px) {
+
+							.slider {
+								padding-top: 390px
+							}
+							.slider .img-details,
+							.slider .img-details img {
+								max-height: 370px
+							}
+							.slider label {
+								margin-right: 14px
+							}
+							.slider span {
+								width: 81px;
+								height: 81px
+							}
+							.slider label img {
+								max-height: 79px
+							}
+						}
+
+						@media(max-width: 767px) {
+
+							.slider {
+								padding-top: 320px;
+								width: 100%;
+								position: relative
+							}
+							.slider .img-details,
+							.slider .img-details img {
+								max-height: 300px
+							}
+							.slider label {
+								margin-right: 12px
+							}
+							.slider span {
+								width: 66px;
+								height: 66px
+							}
+							.slider label img {
+								max-height: 64px
+							}
+
+						}
+
+					</style>
+
+					<div class="content">
+						<div class="container">
+							<div class="inner-row">
+								<div class="col-md-12 right-content">
+									<h1 class="title-heading" style="text-align: center;">New Mobile Responsive Listing Template 2019/2020 Approved</h1><!--Item Title-->
+									<div class="panel panel-default">
+										<div class="image-gallery">
+											<div class="slider"><!--Image Gallery Start-->
+
+												<input type="radio" name="slide_switch" id="id1" checked="" value="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-plus-aura-white.jpg">
+												<label for="id1">
+													<span><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-plus-aura-white.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note10-plus-aura-white.jpg"></div>
+
+												<input type="radio" name="slide_switch" id="id2" value="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a5-2017-1.jpg">
+												<label for="id2">
+													<span><img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a5-2017-1.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a5-2017-1.jpg"></div>
+
+												<input type="radio" name="slide_switch" id="id3" value="https://cdn2.gsmarena.com/vv/pics/apple/apple-ipad-pro-5.jpg">
+												<label for="id3">
+													<span><img src="https://cdn2.gsmarena.com/vv/pics/apple/apple-ipad-pro-5.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://cdn2.gsmarena.com/vv/pics/apple/apple-ipad-pro-5.jpg"></div>
+
+												<input type="radio" name="slide_switch" id="id4" value="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-c7-pro-2.jpg">
+												<label for="id4">
+													<span><img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-c7-pro-2.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-c7-pro-2.jpg"></div>
+
+												<input type="radio" name="slide_switch" id="id5" value="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5-2.jpg">
+												<label for="id5">
+													<span><img src="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5-2.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5-2.jpg"></div>
+
+												<input type="radio" name="slide_switch" id="id6" value="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5r.jpg">
+												<label for="id6">
+													<span><img src="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5r.jpg" width="100"></span>
+												</label>
+												<div class="img-details"><img src="https://cdn2.gsmarena.com/vv/pics/sony/sony-xperia-e5r.jpg"></div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</font>
+			</div>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<span id="closeHtml"></span>
+
+</body>
+
+</html>

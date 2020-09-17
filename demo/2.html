@@ -1,0 +1,466 @@
+<html>
+    <head>
+	<title>eBay</title>
+	</head>
+	<body marginwidth="0" marginheight="0">
+      <table align="center" style="border-spacing: 0px; width: 100%;">
+		  <tbody>
+			<tr>
+				<td>
+					<div id="ds_div">
+						<font rwr="1" size="4" style="font-family:Arial">
+
+							<style>
+								:root {
+									--primary: #333;
+									--secondary: #f5f5f5;
+									--white: #fff;
+									--gradient: #333, #666;
+								}
+
+								@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+								body {
+									margin: 0;
+								}
+
+								.Template {
+									padding: 0;
+									font-family: "Nunito", sans-serif;
+									font-size: 16px;
+									position: relative;
+									overflow: hidden;
+									color: #555;
+								}
+
+								.Mobile {
+									color: var(--white);
+									font-size: 0.9em;
+									background-color: #222;
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+								}
+
+								.Mobile span {
+									padding: 0.5em;
+								}
+
+								.Mobile a {
+									background-color: #444;
+									color: var(--white);
+									padding: 0.5em;
+									text-decoration: none;
+								}
+
+								.Mobile a:hover {
+									color: #d6ffe0;
+								}
+
+								.Header {
+									min-height: 5em;
+									width: 100%;
+									display: flex;
+									justify-content: center;
+									position: relative;
+								}
+
+								.Header__content {
+									z-index: 2;
+									margin-top: 1.5em;
+									color: var(--white);
+									text-align: center;
+								}
+
+								.Header__background {
+									z-index: 1;
+									position: absolute;
+									height: 100%;
+									width: calc(100% + 2px);
+									padding: 0.5em 0;
+									background-image: url("https://monkee.ams3.cdn.digitaloceanspaces.com/templates/i/five.svg");
+									background-size: cover;
+									background-position: bottom;
+									background-repeat: no-repeat;
+								}
+
+								.Header__title {
+									font-size: 1.4em;
+								}
+
+								.Promotion {
+									color: #111;
+									padding: 0.7em 1.2em 0.9em;
+									border-bottom: 1px solid #ddd;
+								}
+
+								.Product {
+									width: calc(100% - 2.8em);
+									max-width: calc(1400px - 2.8em);
+									margin: 0 auto;
+									padding: 2em 1.2em;
+									display: flex;
+									background-image: url("https://monkee.ams3.cdn.digitaloceanspaces.com/templates/i/shopping.svg");
+									background-repeat: no-repeat;
+									background-size: auto 70%;
+									background-position: bottom -10em right;
+									background-clip: border-box;
+								}
+
+								.Product__details,
+								.Product__gallery {
+									width: 50%;
+								}
+
+								.Product__details {
+									padding: 1em;
+								}
+
+								.Product__title {
+									font-weight: 700;
+									font-size: 1.4em;
+									color: var(--primary);
+								}
+
+								.Product__description {
+									color: #757575;
+								}
+
+								.Product__gallery {
+									text-align: center;
+								}
+
+								.Product__gallery input {
+									display: none;
+								}
+
+								.Product__gallery label {
+									display: inline-block;
+								}
+
+								.Product__image {
+									display: none;
+									height: 400px;
+									align-items: center;
+									justify-content: center;
+								}
+
+								.Product__image img {
+									max-height: 100%;
+									max-width: 100%;
+									border-radius: 0.15em;
+									-webkit-border-radius: 0.15em;
+									-moz-border-radius: 0.15em;
+								}
+
+								.Product__thumbnail {
+									margin-top: 0.5em;
+									height: 50px;
+									align-items: center;
+									justify-content: center;
+								}
+
+								.Product__thumbnail img:hover {
+									cursor: pointer;
+									-webkit-box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+									-moz-box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+									box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+								}
+
+								.Product__thumbnail img {
+									max-width: 100%;
+									max-height: 50px;
+									border-radius: 0.15em;
+									-webkit-border-radius: 0.15em;
+									-moz-border-radius: 0.15em;
+								}
+
+								#img1:checked ~ #show1,
+								#img2:checked ~ #show2,
+								#img3:checked ~ #show3,
+								#img4:checked ~ #show4,
+								#img5:checked ~ #show5,
+								#img6:checked ~ #show6,
+								#img7:checked ~ #show7,
+								#img8:checked ~ #show8,
+								#img9:checked ~ #show9,
+								#img10:checked ~ #show10,
+								#img11:checked ~ #show11,
+								#img12:checked ~ #show12,
+								#img13:checked ~ #show13,
+								#img14:checked ~ #show14,
+								#img15:checked ~ #show15 {
+									display: flex;
+								}
+
+								.Tabs {
+									text-align: center;
+									border-top: 1px solid #ddd;
+									padding-top: 1em;
+								}
+
+								.Tabs input {
+									display: none;
+								}
+
+								.Tabs label {
+									padding: 0.5em 1.4em;
+									font-size: 1em;
+									color: var(--primary);
+									display: inline-block;
+									border-radius: 5em;
+									-webkit-border-radius: 5em;
+									-moz-border-radius: 5em;
+									border: 1px solid #ddd;
+									margin-bottom: 1em;
+									margin-right: 0.1em;
+									transition: 200ms linear all;
+								}
+
+								.Tabs label:hover {
+									background-color: var(--primary);
+									border-color: var(--primary);
+									color: var(--white);
+									cursor: pointer;
+									-webkit-box-shadow: 0px 0px 0px 3px rgba(20, 136, 204, 0.15);
+									-moz-box-shadow: 0px 0px 0px 3px rgba(20, 136, 204, 0.15);
+									box-shadow: 0px 0px 0px 3px rgba(20, 136, 204, 0.15);
+								}
+
+								.Tabs label:last-child {
+									margin: 0;
+								}
+
+								.Tabs input:checked + label {
+									background-color: var(--primary);
+									border-color: var(--primary);
+									color: var(--white);
+								}
+
+								.Tabs > div {
+									display: none;
+									width: calc(100% - 5em);
+									padding: 1.5em 2.5em;
+									border-top: 1px solid #ddd;
+									background-color: var(--secondary);
+									text-align: left;
+								}
+
+								.Tabs > div p {
+									line-height: 1.3;
+								}
+
+								.Tabs > div a {
+									color: var(--primary);
+								}
+
+								.Tabs > div video {
+									max-width: 100%;
+								}
+
+								.Tabs > div .Video {
+									margin-top: 2em;
+									border-radius: 0.15em;
+									-webkit-border-radius: 0.15em;
+									-moz-border-radius: 0.15em;
+									overflow: hidden;
+									-webkit-box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+									-moz-box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+									box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+								}
+
+								#tab1:checked ~ #content1,
+								#tab2:checked ~ #content2,
+								#tab3:checked ~ #content3,
+								#tab4:checked ~ #content4 {
+									transition: 150ms linear all;
+									display: block;
+								}
+
+								.Colours {
+									height: 0.5em;
+									width: 100%;
+									background: var(--primary); /* fallback for old browsers */
+									background: -webkit-linear-gradient(to right, var(--gradient)); /* Chrome 10-25, Safari 5.1-6 */
+									background: linear-gradient(to right, var(--gradient)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+								}
+
+								@media screen and (max-width: 860px) {
+									.Product {
+										flex-direction: column;
+										padding: 1em;
+										width: calc(100% - 2em);
+										background-size: 70% auto;
+										background-position: bottom -5em right;
+										background-clip: border-box;
+									}
+
+									.Product__gallery {
+										width: 100%;
+									}
+
+									.Product__image {
+										height: 300px;
+									}
+
+									.Product__details {
+										width: calc(100% - 2em);
+									}
+								}
+
+								@media screen and (max-width: 500px) {
+									.Header__content {
+										margin-top: 1.6em;
+									}
+
+									.Promotion {
+										text-align: center;
+										padding: 1.3em 1em 1em;
+									}
+
+									.Mobile {
+										flex-direction: column;
+										text-align: center;
+									}
+
+									.Mobile a {
+										width: 100%;
+										padding: 0.3em 0;
+										text-align: center;
+										border-bottom: 1px solidvar var(--primary);
+									}
+								}
+
+							</style>
+
+                           <div class="Template">
+							   <div class="Header">
+								   <div class="Header__background"></div>
+								   <div class="Header__content">
+								   <span class="Header__title">Company Name</span>
+								   </div>
+							   </div>
+
+								<div class="Promotion">
+								   <b>FREE</b> instant delivery
+								</div>
+								<div class="Product">
+									<div class="Product__gallery">
+										<input id="img1" type="radio" name="img" checked="">
+										<input id="img2" type="radio" name="img">
+										<input id="img3" type="radio" name="img">
+										<input id="img4" type="radio" name="img">
+										<input id="img5" type="radio" name="img">
+										<div class="Product__image" id="show1">
+											<img src="https://app.joshuamcewen.co.uk/uploads/1QxMuw58Wmq7bhnCqnv5.png">
+										</div>
+										<div class="Product__image" id="show2">
+											<img src="https://app.joshuamcewen.co.uk/uploads/S20H9jjpDUvr1uWj5NNA.png">
+										</div>
+										<div class="Product__image" id="show3">
+											<img src="https://app.joshuamcewen.co.uk/uploads/HWNYQEwvV2GfUiFyb7in.png">
+										</div>
+										<div class="Product__image" id="show4">
+											<img src="https://app.joshuamcewen.co.uk/uploads/Tzx5q3kMvMnISOv4XiZR.png">
+										</div>
+										<div class="Product__image" id="show5">
+											<img src="https://app.joshuamcewen.co.uk/uploads/7247CwJpw3tumP6cKl0k.png">
+										</div>
+										<label for="img1">
+											<div class="Product__thumbnail">
+												<img src="https://app.joshuamcewen.co.uk/uploads/1QxMuw58Wmq7bhnCqnv5.png">
+											</div>
+										</label>
+										<label for="img2">
+											<div class="Product__thumbnail">
+												<img src="https://app.joshuamcewen.co.uk/uploads/S20H9jjpDUvr1uWj5NNA.png">
+											</div>
+										</label>
+										<label for="img3">
+											<div class="Product__thumbnail">
+												<img src="https://app.joshuamcewen.co.uk/uploads/HWNYQEwvV2GfUiFyb7in.png">
+											</div>
+										</label>
+										<label for="img4">
+											<div class="Product__thumbnail">
+												<img src="https://app.joshuamcewen.co.uk/uploads/Tzx5q3kMvMnISOv4XiZR.png">
+											</div>
+										</label>
+										<label for="img5">
+											<div class="Product__thumbnail">
+												<img src="https://app.joshuamcewen.co.uk/uploads/7247CwJpw3tumP6cKl0k.png">
+											</div>
+										</label>
+									</div>
+									<div class="Product__details">
+										<span class="Product__title">Product Name</span>
+										<div class="Product__description">
+											<p>
+											Here's our latest template offering! Add a professional touch to your listings to help increase
+											conversions and promote your brand.
+											</p>
+											<p>All of our templates are <b>mobile friendly</b> and work cross-platform. We've built a custom
+											template generator to make it even easier to produce stunning listing templates with <b>access</b>
+											included
+											in the price of your template.</p>
+											<ul>
+												<li><b>Instant</b> Delivery</li>
+												<li>2019 Responsive Design</li>
+												<li>eBay compliant</li>
+												<li>Access to our template generator</li>
+												<li>No HTML knowledge required</li>
+												<li>Free image uploads</li>
+												<li style="color:#3f95b5">Other colours available, see variations and images above. Do not pick a colour for black.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="Tabs">
+									<input type="radio" name="tabs" id="tab1" checked="">
+									<label for="tab1">Delivery</label>
+									<input type="radio" name="tabs" id="tab2">
+									<label for="tab2">Returns</label>
+									<input type="radio" name="tabs" id="tab3">
+									<label for="tab3">Customisation</label>
+									<div id="content1">
+										<h2>Delivery</h2>
+										<p>You can change the name of these tabs, as well as the content. In our case, here's how we'll get your
+										template to you.</p>
+										<p>We've automated our services, so&nbsp;<b>within five minutes</b>&nbsp;of purchasing our template, you'll receive an email with a registration link for our website where you'll be able to access your template.</p>
+										<p>The Template Generator website makes it convenient to fill in listing details and copy your completed
+										template. See the video below for a tour around the site.</p>
+										<div class="Video">
+											<video style="margin:0 auto;" controls="">
+												<source src="https://joshuamcewen.co.uk/media/templates.mp4" type="video/mp4">
+											</video>
+										</div>
+									</div>
+									<div id="content2">
+										<h2>Returns</h2>
+										<p>As we offer our services as a digital download, once you've logged into the Template Generator website,
+										this will invalidate your right to return. </p>
+										<p>That being said, if we genuinely believe that we haven't been able to meets your requirements, we'll
+										happily refund and revoke access to our site. </p>
+									</div>
+									<div id="content3">
+										<h2>Customisation</h2>
+										<p>As well as building stock templates, we can also tweak and modify styling for you to add that
+										personal touch. Changes do come at an additional charge, so if you're interested then please do get in
+										touch where
+										we'll be able to give you some pricing.</p>
+										<p>If you're looking for something extra special, we also build bespoke listing templates. Again, please get
+										in touch for some more details. All additional customisations are handled through, and processed by
+										eBay.</p>
+									</div>
+								</div>
+								<div class="Colours"></div>
+						    </div>
+						</font>
+					</div>
+				</td>
+	        </tr>
+       </tbody>
+	  </table>
+	  <span id="closeHtml"></span>
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<html>
+
+<head></head>
+
+<body>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://ebayoutsource.co.uk/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://ebayoutsource.co.uk/assets/css/fontawesome.min.css">
+
+
+<style type="text/css">
+    /* TAB SECTION–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    .tab-box {
+        margin: 0 auto;
+        padding: 20px 15px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+
+    .tab-box h4:before {
+        content: none;
+    }
+
+    .tab-box section {
+        display: none;
+        text-align: left;
+        color: #111;
+    }
+
+    .tab-box input {
+        display: none;
+    }
+
+    .tab-box label {
+        line-height: 1.6;
+        display: inline-block;
+        padding: 5px 10px;
+        font-weight: 500;
+        text-align: left;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        background: #b73535;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .tab-box label i {
+        margin-right: 5px;
+    }
+
+    .tab-box label:first-of-type {
+        margin-left: 0;
+    }
+
+    .tab-box label:hover {
+        cursor: pointer;
+        background-color: #9e1c1c;
+        -webkit-transition: all .5s;
+        transform: all .5s;
+    }
+
+    .tab-box input:checked + label {
+        color: #fff;
+        /*background-color: #fff;*/
+        background-color: #9e1c1c;
+        -webkit-transition: all .5s;
+        transform: all .5s;
+    }
+
+    .tab-box .box-logo {
+        padding: 5px 0 0 0;
+    }
+
+    .tab-box #tab1:checked ~ #content-1,
+    .tab-box #tab2:checked ~ #content-2,
+    .tab-box #tab3:checked ~ #content-3,
+    .tab-box #tab4:checked ~ #content-4 {
+        display: block;
+    }
+
+    @media screen and (max-width: 650px) {
+        .tab-box label {
+            margin: 10px auto 10px auto;
+            position: static;
+        }
+        .tab-box label:first-of-type {
+            margin-left: auto;
+        }
+        #content-1,
+        #content-2,
+        #content-3,
+        #content-4 {
+            position: static;
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 475px) {
+        .tab-box section {
+            border-top: 0;
+            padding: 5px 0;
+        }
+    }
+
+
+
+</style>
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 text-center">
+                    <h1>HERE YOUR PRODUCT NAME</h1>
+                    <div class="line-break-2"> <span></span> </div>
+                    <div class="tab-box">
+                        <input id="tab1" type="radio" name="tabs" checked="">
+                        <label for="tab1"><i class="far fa-file-alt"></i>Description</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><i class="fas fa-truck"></i>Delivery</label>
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3"><i class="far fa-money-bill-alt"></i>Payment</label>
+                        <input id="tab4" type="radio" name="tabs">
+                        <label for="tab4"><i class="fas fa-sync"></i>Returns</label>
+                        <section id="content-1">
+                            <h4> Your first description title </h4>
+                            <p>Lorem ipsum dolor sit amet enim. <b>Etiam ullamcorper</b>. Suspendisse a pellentesque dui, non felis. Maecenas malesuada <b>elit lectus</b> felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+                            <h4> Your second description title </h4>
+                            <p>Lorem ipsum dolor sit amet enim. <b>Etiam ullamcorper</b>. Suspendisse a pellentesque dui, non felis. Maecenas malesuada <b>elit lectus</b> felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+                            <h4>Features</h4>
+                            <ul>
+                                <li>Very easy and fast personalize</li>
+                                <li>Responsive Design (desktops, tablets and phones)</li>
+                                <li>Flexible and editable</li>
+                                <li>Nice look animated effects</li>
+                                <li>Compatible with all desktop browsers and mobile browsers</li>
+                                <li>Can be used to list any type of product</li>
+                            </ul>
+                        </section>
+                        <section id="content-2">
+                            <h4>Fast and safe shipping</h4>
+                            <p>We know you want to get your item as soon as possible, so we do everything to make it happen. We ship packages quickly from our warehouse. We cooperate with good companies that provide transport services so your parcel arrives quickly and safely to you.</p>
+                            <h4>We are sending all over the world:</h4>
+                            <ul>
+                                <li>Pickup: <strong>FREE</strong></li>
+                                <li>Base country: <strong>2,00 USD</strong></li>
+                                <li>Europa: <strong>5,00 USD</strong></li>
+                                <li>International: <strong>9,00 USD</strong></li>
+                            </ul>
+                            <div class="box-logo"><img src="https://herolister.com/wp-content/uploads/2019/03/USPS-logo-small.png"><img src="https://herolister.com/assets/ebay-template/img/global/ups_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/dhl_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/australia_post_logo_small.png"><img src="https://herolister.com/wp-content/uploads/2019/04/logo-royal-mail.png"><img src="https://herolister.com/assets/ebay-template/img/global/deutsche_post_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/dpd_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/fedex_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/tnt_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/gls_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/hermes_europe_logo_small.png"><img src="https://herolister.com/assets/ebay-template/img/global/trans_o_flex_logo_small.png"></div>
+                        </section>
+                        <section id="content-3">
+                            <h4>Pay by Paypal wallet or Payment Card</h4>
+                            <p>We meet all the standards to provide you with fully secure payment via Paypal. All your order payments are protected by Paypal Buyer Purchase Protection. You can pay by using the paypal wallet or the payment card.</p>
+                            <div class="box-logo">
+                                <img src="https://herolister.com/assets/ebay-template/img/global/paypal_logo.png">
+                                <img src="https://herolister.com/assets/ebay-template/img/global/visa_logo_small.png">
+                                <img src="https://herolister.com/assets/ebay-template/img/global/master_card_logo_small.png">
+                                <img src="https://herolister.com/assets/ebay-template/img/global/discover_logo_small.png">
+                                <img src="https://herolister.com/assets/ebay-template/img/global/american_express_logo_small.png">
+                            </div>
+                        </section>
+                        <section id="content-4">
+                            <h4>30-day money-back guarantee</h4>
+                            <p>If you are not completely satisfied with the product please do not hesitate to contact us. We will do everything to solve any problem. If you are still unsatisfied, we offer a 30-day money-back guarantee.</p>
+                            <p><strong>Please note</strong>: The returned items must be in the original packaging and in the same condition as you received it.</p>
+                            <p>Refunds are issued to the payment method used at the time of purchase.</p>
+                            <p>If you placed your order from our shop and it was faulty or you received the wrong product, please return it to us within 30 days and we will issue you a full refund or offer a replacement.</p>
+                            <p>All returns are inspected..</p>
+                            <p><strong>Your satisfaction is our priority.</strong></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
